@@ -1,0 +1,73 @@
+{
+  "專案名稱": "Kaggle-Titanic: 鐵達尼號生存預測完整實作",
+  "完成時間": "2025-06-12 22:18:08",
+  "資料統計": {
+    "訓練集大小": 891,
+    "測試集大小": 418,
+    "原始特徵數": 12,
+    "最終特徵數": 14,
+    "整體存活率": "38.3%"
+  },
+  "模型比較結果": {
+    "Logistic Regression": "0.8137 ± 0.0096",
+    "K-Neighbors": "0.7452 ± 0.0166",
+    "SVM Linear": "0.8070 ± 0.0162",
+    "SVM RBF": "0.6925 ± 0.0077",
+    "Gaussian NB": "0.7868 ± 0.0151",
+    "Decision Tree": "0.7856 ± 0.0211",
+    "Random Forest": "0.8215 ± 0.0111"
+  },
+  "最佳模型": {
+    "模型名稱": "Random Forest",
+    "交叉驗證分數": "0.8215",
+    "預測存活率": "38.3%"
+  },
+  "特徵重要性": [
+    {
+      "feature": "Age",
+      "importance": 0.194065994975277
+    },
+    {
+      "feature": "Fare",
+      "importance": 0.172132566164468
+    },
+    {
+      "feature": "Title_Clean_encoded",
+      "importance": 0.15957881447776573
+    },
+    {
+      "feature": "Sex_encoded",
+      "importance": 0.14366065392592567
+    },
+    {
+      "feature": "Pclass",
+      "importance": 0.06898940052764617
+    },
+    {
+      "feature": "Cabin_Class_encoded",
+      "importance": 0.052292556800287
+    },
+    {
+      "feature": "Age_Group_encoded",
+      "importance": 0.038827736216499646
+    },
+    {
+      "feature": "FamilySize",
+      "importance": 0.03673841915702754
+    },
+    {
+      "feature": "Fare_Group_encoded",
+      "importance": 0.03148479846606524
+    },
+    {
+      "feature": "FamilySize_Group_encoded",
+      "importance": 0.030899641562367557
+    }
+  ],
+  "關鍵發現": {
+    "性別影響": "女性存活率 74.2%, 男性 18.9%",
+    "艙等影響": "1等艙 63.0%, 3等艙 24.2%",
+    "年齡影響": "兒童存活率較高",
+    "特徵工程": "從 12 個原始特徵擴展到 14 個"
+  }
+}
